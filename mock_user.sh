@@ -27,6 +27,7 @@ TSGComapanyAbbrev
 usage() {
     echo "Usage: $0 [-a] [-b <arg>] [-c]"
     echo "  -c        Prints the company code that mark bailey is set to"
+    echo "  -c -u <arg>    Prints the company code the of user id set by <arg>"
     echo "  -C <arg>  Sets mark baileys company code to the arg. Can be the id or the 'ATS' identifier"
     echo "  -q        Prints the quick ( perName, id, perEmail, TSGCompanyID, TSGCompanyAbbrev, perMockUser ) of Mark Bailey"
     echo "  -Q <arg>  Prints the quick ( perName, id, perEmail, TSGCompanyID, TSGCompanyAbbrev, perMockUser ) of the given user id or pername or perEmail LIKE '%<arg>%"
