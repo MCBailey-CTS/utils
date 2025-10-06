@@ -1,5 +1,9 @@
 ﻿
 # Define connection string
+
+
+
+
 $connectionString = "Data Source=cqz02f6h9c.database.windows.net;Initial Catalog=TSGMaster;Persist Security Info=True;User ID=TSGTestdev;Password=CA09876ca; MultipleActiveResultSets=true; Connection Timeout=120"
 
 # Create SQL connection
