@@ -1,12 +1,17 @@
 param(
     [Parameter(HelpMessage = "Please provide id")]
-    [alias('i')][string]$id=0,
+    [alias('i')][string]$id = 0,
 
     [Parameter(HelpMessage = "Please provide name")]
-    [alias('n')][string]$name="",
+    [alias('n')][string]$name = "",
 
     [Parameter(HelpMessage = "Please provide email")]
-    [alias('e')][string]$email=""
+    [alias('e')][string]$email = ""
+
+    # get mock user
+    # set mock user
+    # get company code
+    # set company code
 )
 
 $connectionString = "
@@ -28,7 +33,7 @@ try {
     # Create SQL command
     $command = $connection.CreateCommand()
 
-    if ($id -gt 0 ) {
+    if ( $id -gt 0 ) {
         $command.CommandText = "
         SELECT companyid, TSGCompanyAbbrev 
         FROM permissions
@@ -37,7 +42,6 @@ try {
     "
     }
     elseif ($name -ne "" ) {
-        write-output $name
         $command.CommandText = "
         SELECT companyid, TSGCompanyAbbrev 
         FROM permissions
@@ -46,7 +50,6 @@ try {
         "
     }
     elseif ($email -ne "" ) {
-        Write-Output "in email"
         $command.CommandText = "
         SELECT companyid, TSGCompanyAbbrev 
         FROM permissions
@@ -54,8 +57,7 @@ try {
         WHERE emailaddress like '%$email%'
     "
     }
-    else
-    {
+    else {
         Write-Output "You did not properly execute this command."
         exit 1
     }
