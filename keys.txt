@@ -1,0 +1,34 @@
+VSCode keys
+ 
+delete word under cursor
+
+ctrl + d
+	highlights word under cursor
+	hightlights letters, numbers, and underscore
+
+
+
+
+- need to be able to hightlight entire line
+
+- split window horizontally
+
+- split window vertically
+
+- switch to different window 
+
+- close editor
+
+- move cursor down paragrah
+
+- move cursor up paragraph
+
+- delete line
+	ctrl + shift + k
+- ctrl + l
+	highlights entire line and places cursor at the beginning of the next line.
+
+ctrl + w
+	closes the current vsode editor window
+
+
