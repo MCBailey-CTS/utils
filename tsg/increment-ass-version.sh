@@ -14,8 +14,8 @@ if [[ $1 == "." ]]; then
         # t=$(basename "$dll")
         proper=${dll//$'/'/$'\\'}     
         proper=${proper/$'\\u'/"u:"}   
-        command="[System.Reflection.AssemblyName]::GetAssemblyName(\"$proper\").Version.ToString()"
-        version=$(powershell.exe -Command $command)
+        .ToString()"
+        versionell.exe -Command $command)
     done
 fi
 
